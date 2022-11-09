@@ -1,0 +1,42 @@
+body {
+    background-color: $white-text-color;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    color: $general-text-color;
+    font-size: 14px;
+}
+
+.container {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 480px;
+    @media (min-width: 767px) {
+        max-width: 480px;
+    }
+    @media (min-width:768px) and (max-width: 1199px) {
+        max-width: 768px;
+    }
+    @media (min-width: 1200px) {
+        max-width: 1200px;
+    }
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+        max-width: 1600px;
+    }
+}
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: $tit-text-color;
+}

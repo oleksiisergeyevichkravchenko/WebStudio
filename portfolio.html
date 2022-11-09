@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="./images/w.ico" type="image/x-icon" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container page-header">
+        <a href="./index.html" class="header-logo logo"
+          >Web<span class="header-logo__studio">Studio </span>
+        </a>
+        <button
+          type="button"
+          class="menu__button"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg width="40" height="40" aria-label="Mobile menu switch">
+            <use class="burger" href="./images/icons.svg#icon-burger"></use>
+            <use
+              class="burger-close"
+              href="./images/icons.svg#icon-burger-close"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu" data-menu>
+          <nav class="navigation">
+            <ul class="nav">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link">Studio</a>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link current"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contact">
+            <li class="contact__item">
+              <a
+                class="contact__link mail__link"
+                href="mailto:info@devstudio.com"
+              >
+                <svg class="contact__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="contact__item">
+              <a class="contact__link phone__link" href="tel:+380961111111">
+                <svg class="contact__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-sphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <ul class="menu-social">
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>Facebook</li>
+            <li>LinkedIn</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Works</h1>
+          <!-- hidden title -->
+          <ul class="filtr">
+            <li class="filtr__item">
+              <button class="filtr__button" type="button">All</button>
+            </li>
+            <li class="filtr__item">
+              <button class="filtr__button" type="button">Web sites</button>
+            </li>
+            <li class="filtr__item">
+              <button class="filtr__button" type="button">Applications</button>
+            </li>
+            <li class="filtr__item">
+              <button class="filtr__button" type="button">Design</button>
+            </li>
+            <li class="filtr__item">
+              <button class="filtr__button" type="button">Marketing</button>
+            </li>
+          </ul>
+          <ul class="project">
+            <li class="project__item">
+              <a class="project__link" href="#">
+                <div class="project__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-1-desktop.jpg    1x,
+                        ./images/project-1-desktop-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-1-tablet.jpg    1x,
+                        ./images/project-1-tablet-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-1.jpg           1x,
+                        ./images/project-1-mobile-x2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      type="image/jpeg"
+                    />
+                    <img src="./images/project-1.jpg" alt="Web sites" />
+                  </picture>
+                  <div class="project__back">
+                    <p>
+                      The resource offers comprehensive offers with different
+                      levels functionality and services. All this will allow the
+                      visitor obtain comprehensive information about the company
+                      or private face.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__title">
+                  <h2 class="project__name">Technoquack</h2>
+                  <p class="project__product project__product-tablet">
+                    Web sites
+                  </p>
+                </div></a
+              >
+            </li>
+            <li class="project__item">
+              <a class="project__link" href="#">
+                <div class="project__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-2-desktop.jpg    1x,
+                        ./images/project-2-desktop-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-2-tablet.jpg    1x,
+                        ./images/project-2-tablet-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-2.jpg           1x,
+                        ./images/project-2-mobile-x2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      type="image/jpeg"
+                    />
+                    <img src="./images/project-2.jpg" alt="Design" />
+                  </picture>
+                  <!-- <img src="./images/project-2.jpg" alt="Design" /> -->
+                  <div class="project__back">
+                    <p>
+                      The resource offers comprehensive offers with different
+                      levels functionality and services. All this will allow the
+                      visitor obtain comprehensive information about the company
+                      or private face.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__title">
+                  <h2 class="project__name">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="project__product">Design</p>
+                </div></a
+              >
+            </li>
+            <li class="project__item">
+              <a class="project__link" href="#">
+                <div class="project__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-3-desktop.jpg    1x,
+                        ./images/project-3-desktop-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-3-tablet.jpg    1x,
+                        ./images/project-3-tablet-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-3.jpg           1x,
+                        ./images/project-3-mobile-x2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      type="image/jpeg"
+                    />
+                    <img src="./images/project-3.jpg" alt="Application" />
+                  </picture>
+                  <!-- <img src="./images/project-3.jpg" alt="Application" /> -->
+                  <div class="project__back">
+                    <p>
+                      The resource offers comprehensive offers with different
+                      levels functionality and services. All this will allow the
+                      visitor obtain comprehensive information about the company
+                      or private face.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__title">
+                  <h2 class="project__name">Restaurant Seafood</h2>
+                  <p class="project__product">Application</p>
+                </div></a
+              >
+            </li>
+            <li class="project__item">
+              <a class="project__link" href="#">
+                <div class="project__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-4-desktop.jpg    1x,
+                        ./images/project-4-desktop-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-4-tablet.jpg    1x,
+                        ./images/project-4-tablet-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-4.jpg           1x,
+                        ./images/project-4-mobile-x2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      type="image/jpeg"
+                    />
+                    <img src="./images/project-4.jpg" alt="Marketing" />
+                  </picture>
+                  <!-- <img src="./images/project-4.jpg" alt="Marketing" /> -->
+                  <div class="project__back">
+                    <p>
+                      The resource offers comprehensive offers with different
+                      levels functionality and services. All this will allow the
+                      visitor obtain comprehensive information about the company
+                      or private face.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__title">
+                  <h2 class="project__name">Project Prime</h2>
+                  <p class="project__product">Marketing</p>
+                </div></a
+              >
+            </li>
+            <li class="project__item">
+              <a class="project__link" href="#">
+                <div class="project__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-5-desktop.jpg    1x,
+                        ./images/project-5-desktop-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-5-tablet.jpg    1x,
+                        ./images/project-5-tablet-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-5.jpg           1x,
+                        ./images/project-5-mobile-x2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      type="image/jpeg"
+                    />
+                    <img src="./images/project-5.jpg" alt="Application" />
+                  </picture>
+                  <!-- <img src="./images/project-5.jpg" alt="Application" /> -->
+                  <div class="project__back">
+                    <p>
+                      The resource offers comprehensive offers with different
+                      levels functionality and services. All this will allow the
+                      visitor obtain comprehensive information about the company
+                      or private face.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__title">
+                  <h2 class="project__name">Project Boxes</h2>
+                  <p class="project__product">Application</p>
+                </div></a
+              >
+            </li>
+            <li class="project__item">
+              <a class="project__link" href="#">
+                <div class="project__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-6-desktop.jpg    1x,
+                        ./images/project-6-desktop-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-6-tablet.jpg    1x,
+                        ./images/project-6-tablet-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-6.jpg           1x,
+                        ./images/project-6-mobile-x2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      type="image/jpeg"
+                    />
+                    <img src="./images/project-6.jpg" alt="Web sites" />
+                  </picture>
+                  <!-- <img src="./images/project-6.jpg" alt="Web sites" /> -->
+                  <div class="project__back">
+                    <p>
+                      The resource offers comprehensive offers with different
+                      levels functionality and services. All this will allow the
+                      visitor obtain comprehensive information about the company
+                      or private face.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__title">
+                  <h2 class="project__name">Inspiration has no Borders</h2>
+                  <p class="project__product">Web sites</p>
+                </div></a
+              >
+            </li>
+            <li class="project__item">
+              <a class="project__link" href="#">
+                <div class="project__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-7-desktop.jpg    1x,
+                        ./images/project-7-desktop-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-7-tablet.jpg    1x,
+                        ./images/project-7-tablet-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-7.jpg           1x,
+                        ./images/project-7-mobile-x2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      type="image/jpeg"
+                    />
+                    <img src="./images/project-7.jpg" alt="Design" />
+                  </picture>
+                  <!-- <img src="./images/project-7.jpg" alt="Design" /> -->
+                  <div class="project__back">
+                    <p>
+                      The resource offers comprehensive offers with different
+                      levels functionality and services. All this will allow the
+                      visitor obtain comprehensive information about the company
+                      or private face.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__title">
+                  <h2 class="project__name">Publication Limited Edition</h2>
+                  <p class="project__product">Design</p>
+                </div></a
+              >
+            </li>
+            <li class="project__item">
+              <a class="project__link" href="#">
+                <div class="project__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-8-desktop.jpg    1x,
+                        ./images/project-8-desktop-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-8-tablet.jpg    1x,
+                        ./images/project-8-tablet-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-8.jpg           1x,
+                        ./images/project-8-mobile-x2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      type="image/jpeg"
+                    />
+                    <img src="./images/project-8.jpg" alt="Marketing" />
+                  </picture>
+                  <!-- <img src="./images/project-8.jpg" alt="Marketing" /> -->
+                  <div class="project__back">
+                    <p>
+                      The resource offers comprehensive offers with different
+                      levels functionality and services. All this will allow the
+                      visitor obtain comprehensive information about the company
+                      or private face.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__title">
+                  <h2 class="project__name">Project LAB</h2>
+                  <p class="project__product">Marketing</p>
+                </div></a
+              >
+            </li>
+            <li class="project__item">
+              <a class="project__link" href="#">
+                <div class="project__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-9-desktop.jpg    1x,
+                        ./images/project-9-desktop-x2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-9-tablet.jpg    1x,
+                        ./images/project-9-tablet-x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-9.jpg           1x,
+                        ./images/project-9-mobile-x2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                      type="image/jpeg"
+                    />
+                    <img src="./images/project-9.jpg" alt="Application" />
+                  </picture>
+                  <!-- <img src="./images/project-9.jpg" alt="Application" /> -->
+                  <div class="project__back">
+                    <p>
+                      The resource offers comprehensive offers with different
+                      levels functionality and services. All this will allow the
+                      visitor obtain comprehensive information about the company
+                      or private face.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__title">
+                  <h2 class="project__name">Growing Business</h2>
+                  <p class="project__product">Application</p>
+                </div></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="section footer">
+      <div class="container basement">
+        <div class="footer-tablet">
+          <div class="info-box">
+            <a href="./index.html" class="logo footer-logo"
+              >Web<span class="logo__studio">Studio</span>
+            </a>
+            <address>
+              <ul class="info">
+                <li class="info__item">
+                  <a
+                    class="info__link"
+                    href="https://goo.gl/maps/kv4M4T3cow1a3KDr5"
+                    >Kyiv, Lesya Ukrainka Ave, 26</a
+                  >
+                </li>
+                <li class="info__item">
+                  <a class="info__contact" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="info__item">
+                  <a class="info__contact" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="connect">
+            <strong class="basement__title connect-tablet">join</strong>
+            <ul class="social social-team">
+              <li class="social__item">
+                <a class="social__link social__link--grey" href="#">
+                  <svg class="social__icon instagram">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--grey" href="#">
+                  <svg class="social__icon twitter">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--grey" href="#">
+                  <svg class="social__icon facebook">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--grey" href="#">
+                  <svg class="social__icon linkedin">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="subscribe">
+          <strong class="basement__title">Subscribe to newsletter</strong>
+          <form class="subscribe__form">
+            <label>
+              <input
+                placeholder="E-mail"
+                type="email"
+                class="subscribe__input"
+              />
+            </label>
+            <button type="submit" class="button button__subscribe">
+              Subscribe
+              <svg class="subscribe__send">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./mobile-menu.js"></script>
+  </body>
+</html>
